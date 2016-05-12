@@ -1,0 +1,13 @@
+title: Andrea Francesco Iuorio
+#email_work: aa
+email_personal: andrea@iuorio.eu
+description: Computer scientist, software developer, enjoy solving problems and eating pizza.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://af.iuorio.eu" # the base hostname & protocol for your site
+github_username: afiuorio
+mastodon_username: panzone91
+linkedin_username: afiuorio
+
+# Build settings
+markdown: kramdown
+excerpt_separator: <!--more-->

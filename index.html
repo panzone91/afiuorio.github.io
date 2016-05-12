@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="home">
+
+<p>
+<div class="row">
+  <div class="column left">
+<center>  <img class="resize" src="/assets/5716264.jpg"></center>
+  </div>
+  <div class="column right">
+    <p align="justify">I'm a computer scientist and a software developer. My main areas of interest are software security, reverse engineering,
+    programming languages development, cryptography and system administration. In my free time I like travelling and cooking!</p><br>
+  </div>
+</div>
+</p>
+<p>
+    <h1 class="page-heading">Quick resume:</h1>
+
+    <ul>
+    <li>I've obtained my M.Sc. in Computer Science with the thesis <a href="/assets/thesis_afi_msc.pdf">Exploiting SHA-1 weaknesses to speed up PBKDF2</a>.</li>
+    <li>I've participated in the Google Summer Of Code programs 3 times, two as a student and one as a mentor. I've contributed to the
+        <a href="http://www.mono-project.com/community/google-summer-of-code/">Mono Project</a> working on SGen and I've contributed to the
+        <a href="http://chapel.cray.com">Chapel programming language</a> working on the compiler and runtime.
+    </li>
+    <li>I've obtained my B.Sc. in Computer Science with the thesis <a href="/assets/thesis_afi_bsc.pdf">Portable and modular exceptions in Neverlang2</a>.</li>
+    <li>While I was a student I was part of the <a href="https://cazzola.di.unimi.it/adapt-lab.html">Adapt Lab</a>
+        and I was a member of the <a href="http://www.club.di.unimi.it/">CLUB</a> laboratory working on several cryptography-related projects and papers.</li>
+ </ul>
+
+    <h1 class="page-heading">Latest post:</h1>
+
+    <ul class="post-list">
+        {% for post in site.posts limit:1%}
+        <li>
+            <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+            <h2>
+                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            {{ post.excerpt }}
+        </li>
+        {% endfor %}
+    </ul>
+</p>
+</div>
